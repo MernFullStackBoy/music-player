@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 1366px;
+    height: 633px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section {
+    width: 350px;
+    height: 450px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+h3 {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 35px;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    background: url(../image/Allah.webp);
+    background-size: cover;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: disk;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.black {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-top: 5px;
+}
+
+.buttons {
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.1s;
+    font-size: 20px;
+}
+
+button:active {
+    transform: scale(1.05);
+}
+
+@keyframes disk {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header {
+        background-color: red;
+    }
+}
